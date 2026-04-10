@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_crypto_prices
+    description: "Cleaned staging model for raw cryptocurrency prices"
+    columns:
+      - name: id
+        description: "Unique identifier of the cryptocurrency"
+        tests:
+          - not_null
+
+      - name: symbol
+        description: "Ticker symbol"
+        tests:
+          - not_null
+
+      - name: name
+        description: "Cryptocurrency name"
+        tests:
+          - not_null

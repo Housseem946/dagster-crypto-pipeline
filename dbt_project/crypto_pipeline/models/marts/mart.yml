@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: crypto_market_summary
+    description: "Business-ready summary table for dashboard consumption"
+    columns:
+      - name: name
+        tests:
+          - not_null
+
+      - name: symbol
+        tests:
+          - not_null
