@@ -1,0 +1,9 @@
+# Ce fichier dit à dbt comment se connecter à DuckDB. Il doit être dans dbt_project/crypto_pipeline/ :
+
+crypto_pipeline:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "../../data/crypto.duckdb"
+      threads: 4

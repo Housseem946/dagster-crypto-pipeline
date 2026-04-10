@@ -1,0 +1,21 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# DuckDB
+data/
+*.duckdb
+
+# dbt
+dbt_project/target/
+dbt_project/dbt_packages/
+dbt_project/logs/
+
+# Dagster
+$DAGSTER_HOME/
+
+# OS
+.DS_Store

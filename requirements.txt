@@ -1,0 +1,22 @@
+# Dagster
+dagster
+dagster-webserver
+dagster-dbt
+dagster-duckdb
+
+# dbt
+dbt-core
+dbt-duckdb
+
+# Data
+pandas
+requests
+python-dotenv
+
+# Dashboard
+streamlit
+plotly
+
+# Tests
+pytest
+pytest-mock
