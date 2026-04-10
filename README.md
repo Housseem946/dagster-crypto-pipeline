@@ -7,6 +7,8 @@
 
 
 ### Arboresence du projet 
+
+```
 dagster-crypto-pipeline/
 │
 ├── dagster_pipeline/               ← package principal Dagster
@@ -49,3 +51,5 @@ dagster-crypto-pipeline/
 ├── Dockerfile
 ├── requirements.txt
 └── README.md
+
+```
