@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+data/
+.git/
+.pytest_cache/
+dbt_project/crypto_pipeline/target/
+dbt_project/crypto_pipeline/logs/
+*.png
+notes.txt

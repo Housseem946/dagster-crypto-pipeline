@@ -1,0 +1,26 @@
+services:
+  dagster:
+    build: .
+    container_name: dagster_pipeline
+    command: dagster dev -f dagster_pipeline/definitions.py -h 0.0.0.0 -p 3000
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data:/app/data
+      - ./dbt_project:/app/dbt_project
+      - ./.dagster:/app/.dagster
+    environment:
+      DAGSTER_HOME: /app/.dagster
+    restart: unless-stopped
+
+  streamlit:
+    build: .
+    container_name: streamlit_dashboard
+    command: streamlit run dashboard/app.py --server.address 0.0.0.0 --server.port 8501
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data
+    depends_on:
+      - dagster
+    restart: unless-stopped
