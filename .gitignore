@@ -15,15 +15,17 @@ dbt_project/dbt_packages/
 dbt_project/logs/
 
 # Dagster
-$DAGSTER_HOME/
+.tmp_dagster_home_*
 
 # OS
 .DS_Store
 
+# IDE
+.vscode/
 
-# Ignorer les fichiers temporaires 
+# Logs
+logs/
 
-.vscode
-.tmp_dagster_home__nriq29k
-.tmp_dagster_home_eb1gq65y
-logs
+# Mes notes 
+
+notes.txt
