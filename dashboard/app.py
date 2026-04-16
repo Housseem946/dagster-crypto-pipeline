@@ -15,7 +15,11 @@ st.set_page_config(
 @st.cache_data(ttl=300)
 def load_data():
     conn = duckdb.connect(DB_PATH, read_only=True)
-    df = conn.execute("SELECT * FROM crypto_market_summary").df()
+    df = conn.execute("""
+        SELECT DISTINCT ON (name) *
+        FROM crypto_market_summary
+        ORDER BY name, fetched_at DESC
+    """).df()
     conn.close()
     return df
 
