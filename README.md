@@ -258,10 +258,12 @@ dbt apporte la rigueur du génie logiciel aux transformations SQL : modèles ver
 Dagster adopte une approche **asset-centric** : on définit ce que les données *sont* plutôt que ce que le pipeline *fait*. Cela donne une meilleure observabilité, une gestion du lignage des données et une intégration native avec dbt.
 
 ---
-### Athoured By me
+### Authored By me
 
-
-### Apercu du projet 
+---
+### Aperçu du projet 
 
 ![alt text](image.png)
+---
 ![alt text](image-1.png)
+---
