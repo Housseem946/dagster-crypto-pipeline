@@ -32,7 +32,7 @@ notes.txt
 
 # Images 
 *.png
-
+image.png
 
 # Dagster 
-.dagster
+*.dagster
