@@ -36,3 +36,8 @@ image.png
 
 # Dagster 
 *.dagster
+
+reservio_watcher.py
+image-1.png
+image.png
+.dagster/
