@@ -260,9 +260,11 @@ Dagster adopte une approche **asset-centric** : on définit ce que les données 
 ---
 ### Aperçu du Dashboard  
 
-![alt text](image.png)
+![Aperçu dashboard](data/Appercu_dashboard_crypto.png)
+
 ---
-![alt text](image-1.png)
+![Tests](data/Appercu_dashboard_crypto_2.png)
+
 ---
 
 ## Appercu des exemples de tests 
